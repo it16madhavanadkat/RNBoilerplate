@@ -13,11 +13,9 @@ class SplashScreen extends Component {
     constructor(props) {
         super(props);
     }
-
     async componentDidMount(){
         Translater.setConfig("en");
     }
-
     render() {
         return (
             <View style={styles.container1}>

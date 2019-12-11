@@ -93,7 +93,7 @@ class LoginScreen extends Component {
 
                 </Content>
                 <Footer style={styles.footerStyle}>
-                    <Text style={styles.fontStyle}>{'Copyright ©️SOFIA 2019'}</Text>
+                    <Text style={styles.fontStyle}>{'Copyright ©ReactNtive 2019'}</Text>
                 </Footer>
             </Container>
 

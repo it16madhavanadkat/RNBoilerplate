@@ -14,37 +14,8 @@ class SplashScreen extends Component {
         super(props);
     }
 
-    async componentDidMount(): void {
+    async componentDidMount(){
         Translater.setConfig("en");
-        this.forceUpdate();
-        SessionManager.getValueForKey(SesstionKey.USERS).then((user) => {
-
-            if (user) {
-                SessionManager.getValueForKey(SesstionKey.ISPINSET).then((pinset) => {
-                    if (pinset) {
-                        this._navigateToScreen("UnlockPINScreen")
-                    } else {
-                        this._navigateToScreen("AuthScreen")
-                    }
-                });
-            } else {
-                this._navigateToScreen("LoginScreen")
-            }
-
-        });
-    }
-
-
-    _navigateToScreen(screen) {
-        const resetAction = StackActions.reset({
-            index: 0,
-            actions: [
-                NavigationActions.navigate({
-                    routeName: screen
-                })
-            ]
-        });
-        this.props.navigation.dispatch(resetAction);
     }
 
     render() {

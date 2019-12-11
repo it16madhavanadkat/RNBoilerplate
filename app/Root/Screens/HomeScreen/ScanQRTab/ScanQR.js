@@ -7,7 +7,6 @@ import {View, Text} from "react-native";
 class ScanQR extends Component {
 
     render() {
-        const { isFocused } = this.state;
         return (
             <Container>
                 <MainHeader leftIcon={left} bodyContent={'Scan QR Code'} rightIcon={notificaiton}

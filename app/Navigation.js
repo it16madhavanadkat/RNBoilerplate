@@ -5,7 +5,6 @@ import SplashScreen from "./Root/Screens/SplashScreen";
 import HomeScreen from "./Root/Screens/HomeScreen";
 import AuthScreen from "./Root/Screens/AuthScreen";
 import TaskSheetScreen from "./Root/Screens/TaskSheetScreen";
-import IncrementScreen from "./Root/Screens/Letters/IncrementScreen";
 import TaxScreen from "./Root/Screens/TaxScreen";
 import PeopleScreen from "./Root/Screens/PeopleScreen";
 import LoginScreen from "./Root/Screens/LoginScreen";
@@ -14,15 +13,11 @@ import UnlockPINScreen from "./Root/Screens/UnlockPINScreen";
 import {fromRight} from "././navigationTransitions";
 import PinViewScreen from "./Root/Screens/PinViewScreen/PinViewScreen";
 import PayslipScreen from "./Root/Screens/PayslipScreen/PayslipScreen";
-import PayslipDetailScreen from './Root/Screens/PayslipScreen/PayslipDetail/PayslipDetailScreen';
 import LettersScreen from "./Root/Screens/Letters/LettersScreen";
 import ChangePasswordScreen from "./Root/Screens/ChangePasswordScreen/ChangePasswordScreen";
 import TravelScreen from "./Root/Screens/TravelScreen";
 import RequestScreen from "./Root/Screens/RequestScreen"
-import LeaveScreen from "./Root/Screens/RequestScreen/Leave";
-import ApplyLeaveScreen from "./Root/Screens/RequestScreen/Leave/ApplyLeave/ApplyLeaveScreen";
 import HolidayListScreen from "./Root/Screens/HolidayListScreen";
-import ExpenseScreen from "./Root/Screens/RequestScreen/Expense";
 import ActivatePinViewScreen from "./Root/Screens/ActivatePinViewScreen";
 import ReActivatePinViewScreen from "./Root/Screens/ActivatePinViewScreen/ReActivatePinViewScreen";
 import LocationScreen from "./Root/Screens/LocationScreen";
@@ -58,12 +53,6 @@ const StackScreen = createStackNavigator(
             })
         }, TaskSheetScreen: {
             screen: TaskSheetScreen,
-            navigationOptions: () => ({
-                header: null
-            })
-        },
-        IncrementScreen: {
-            screen: IncrementScreen,
             navigationOptions: () => ({
                 header: null
             })
@@ -104,12 +93,6 @@ const StackScreen = createStackNavigator(
                 header: null
             })
         },
-        PayslipDetailScreen:{
-            screen: PayslipDetailScreen,
-            navigationOptions: () => ({
-                header: null
-            })
-        },
         LettersScreen:{
             screen: LettersScreen,
             navigationOptions: () => ({
@@ -134,28 +117,10 @@ const StackScreen = createStackNavigator(
                 header: null
             })
         },
-        LeaveScreen:{
-            screen:LeaveScreen,
-            navigationOptions: () => ({
-                header: null
-            })
-        },
-        ApplyLeaveScreen:{
-            screen:ApplyLeaveScreen,
-            navigationOptions: () => ({
-                header: null
-            })
-        },
         HolidayListScreen:{
             screen:HolidayListScreen,
             navigationOptions: () => ({
                 header: null
-            })
-        },
-        ExpenseScreen:{
-            screen:ExpenseScreen,
-            navigationOptions:()=>({
-                header:null
             })
         },
         LocationScreen:{

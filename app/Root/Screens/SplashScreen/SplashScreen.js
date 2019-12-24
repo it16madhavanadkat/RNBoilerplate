@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {NavigationActions, StackActions} from "react-navigation";
 import {connect} from "react-redux";
 import {Image, View} from 'react-native'
-import {splashlogo} from "app/assets";
+import {faceID} from "app/assets";
 import styles from "./SplashScreenStyle";
 import {SessionManager} from "react-native-gtlcomponent";
 import {SesstionKey} from "app/Constants";
@@ -22,7 +22,7 @@ class SplashScreen extends Component {
     render() {
         return (
             <View style={styles.container1}>
-                <Image style={styles.imageStyle} source={splashlogo}/>
+                <Image style={styles.imageStyle} source={faceID}/>
             </View>
         );
     }

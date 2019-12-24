@@ -19,7 +19,7 @@ import iconChevronDoubleRight from "./chevron_double_right.png";
 import pinImage from './enter_pin_icon.png';
 import fingerPrint from './finger_print_icon.png'
 import faceID from './face_recog_icon.png'
-import splashlogo from './splash_logo.png';
+
 import timesheet from './icon_timesheet.png';
 import payslip from './icon_payslips.png';
 import letters from './icon_letters.png';
@@ -113,7 +113,6 @@ export {
     eCare,
     iconMic,
     iconSearch,
-    splashlogo,
     iconShare,
     iconIncrement,
     iconCompensetion,

@@ -1,5 +1,5 @@
 export const color = {
-    _018CCA: "#018CCA",
+    _018CCA: "#000000",
     _220a9c: '#220a9c',
     _EC6BAE: '#EC6BAE',
     _555555: '#555555',

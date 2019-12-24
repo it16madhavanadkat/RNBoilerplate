@@ -30,7 +30,7 @@ console.disableYellowBox = true;
 const StackScreen = createStackNavigator(
     {
         SplashScreen: {
-            screen: HomeScreen,
+            screen: SplashScreen,
             navigationOptions: () => ({
                 header: null
             })

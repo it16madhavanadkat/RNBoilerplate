@@ -5,10 +5,10 @@ import {Button, Container, Content, Footer, Spinner, Text} from "native-base";
 import styles from "./LoginScreenStyle";
 import {EditTextView, TextView} from "app/Component";
 import {splashlogo} from "app/assets";
-import base64 from 'react-native-base64'
+
 import {forgotPassword, loginUser} from 'app/store/login'
 import {color} from "app/Theme";
-import DeviceInfo from 'react-native-device-info';
+
 import Translater from "app/i18n";
 
 
@@ -23,45 +23,20 @@ class LoginScreen extends Component {
     }
 
     handleForgotPassword = () => {
-
-        let username = this.state.username;
         this.props.navigation.navigate("PinViewScreen", {otp: null})
-        // this.props.forgotPassword(username, {
-        //     SuccessCallback: res => {
-        //         this.props.navigation.navigate("PinViewScreen", {otp: res.Data.OTP})
-        //     }, FailureCallback: res => {
-        //     }
-        // })
+
     };
 
-    componentDidMount(){
+    componentDidMount() {
 
 
-
-        DeviceInfo.getUniqueId().then(uniqueId => {
-
-            this.setState({uid: uniqueId})
-        });
     }
 
     handleLoginSubmit = () => {
 
 
-        let params = {
-            DeviceId: this.state.uid,
-            DeviceType: Platform.OS ? 'ios' : 'Android',
-            username: this.state.username,
-            password: base64.encode(this.state.password),
-            FCM_Token: '-'
 
-        };
         this.props.navigation.navigate("AuthScreen")
-        // this.props.loginUser(params, {
-        //     SuccessCallback: res => {
-        //         this.props.navigation.navigate("AuthScreen")
-        //     }, FailureCallback: res => {
-        //     }
-        // })
 
 
     };

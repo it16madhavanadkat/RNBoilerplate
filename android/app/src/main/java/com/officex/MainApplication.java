@@ -1,22 +1,9 @@
 package com.officex;
 
 import android.app.Application;
-import android.util.Log;
 
 import com.facebook.react.PackageList;
-import com.facebook.hermes.reactexecutor.HermesExecutorFactory;
-import com.facebook.react.bridge.JavaScriptExecutorFactory;
 import com.facebook.react.ReactApplication;
-import com.reactnativecommunity.netinfo.NetInfoPackage;
-import com.wenkesj.voice.VoicePackage;
-import com.rnfs.RNFSPackage;
-import com.reactcommunity.rnlocalize.RNLocalizePackage;
-import com.reactnativecommunity.rnpermissions.RNPermissionsPackage;
-import org.reactnative.camera.RNCameraPackage;
-import com.learnium.RNDeviceInfo.RNDeviceInfo;
-import com.rnfingerprint.FingerprintAuthPackage;
-import com.reactlibrary.RNGtlcomponentPackage;
-import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;

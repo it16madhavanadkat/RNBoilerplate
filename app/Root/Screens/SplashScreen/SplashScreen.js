@@ -15,6 +15,9 @@ class SplashScreen extends Component {
     }
     async componentDidMount(){
         Translater.setConfig("en");
+        setTimeout(()=>{
+            this.props.navigation.navigate('HomeScreen');
+        },3000)
     }
     render() {
         return (

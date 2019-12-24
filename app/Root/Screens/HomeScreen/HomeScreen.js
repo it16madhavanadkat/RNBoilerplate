@@ -39,26 +39,34 @@ const Tab = createBottomTabNavigator
             screen: ScanQRTab,
             navigationOptions: () => ({
                 tabBarIcon: ({tintColor, focused}) => (
-
-                    <View style={[{
-                        marginTop: -60, height: 60,
-                        alignItems: 'center',
-                        justifyContent:'center',
-                        width: 60,
-                        borderRadius:30,
-                        backgroundColor:'white',
-                        borderColor:'#919191',
-                        borderWidth:0.3
-                    },cs.shadow]}>
-                        <View style={{position:'absolute',bottom:-5,backgroundColor:'white',height: 30,width:62}}/>
-                        <Image style={ styles.selectedIcon2  }
-                               source={iconScanner}
+                    <Image style={focused ? styles.selectedIcon :styles.unSelectedIcon }
+                           source={focused ? iconScanner : iconScanner}
 
                     />
-
-                    </View>
                 )
             }),
+            // navigationOptions: () => ({
+            //     tabBarIcon: ({tintColor, focused}) => (
+            //
+            //         <View style={[{
+            //             marginTop: -60, height: 60,
+            //             alignItems: 'center',
+            //             justifyContent:'center',
+            //             width: 60,
+            //             borderRadius:30,
+            //             backgroundColor:'white',
+            //             borderColor:'#919191',
+            //             borderWidth:0.3
+            //         },cs.shadow]}>
+            //             <View style={{position:'absolute',bottom:-5,backgroundColor:'white',height: 30,width:62}}/>
+            //             <Image style={ styles.selectedIcon2  }
+            //                    source={iconScanner}
+            //
+            //         />
+            //
+            //         </View>
+            //     )
+            // }),
         }
         , 'Setting': {
             screen: SettingTab,
